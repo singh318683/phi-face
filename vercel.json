@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "phi_face_free.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "phi_face_free.py"
+    }
+  ]
+}
